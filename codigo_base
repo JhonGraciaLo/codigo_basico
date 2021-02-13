@@ -1,0 +1,101 @@
+# CREAR MATRICES CON NUMPY
+import numpy as np
+
+a= np.array([1,2,3])
+print('Matriz de Una dimensión')
+print(a)
+print()
+b=np.array([(1,2,3),(4,5,6)])
+print('Matriz de 2D')
+print(b)
+c=a*b
+print('El resultado de multiplicar las matrices a y b es:')
+print(c)
+# MATRIZ EN 3D
+d2=np.array([(2,4,3),(3,4,5),(4,4,5)])
+print('Matriz en 2D')
+print(d2)
+# MATRIZ DE UNOS
+unos=np.ones((5,4))
+print('Matriz de unos')
+print(unos)
+# MATRIZ DE CEROS
+ceros=np.zeros((5,4))
+print('Matriz de ceros')
+print(ceros)
+#MATRIZ DE NÚMEROS ALEATORIOS
+aleatorios=np.random.random((5,4))
+print('Matriz de números aleatorios')
+print(aleatorios)
+# MATRIZ VACÍA
+vacia=np.empty((5,4))
+print('Matriz vacía')
+print(vacia)
+#MATRIZ CON UN VALOR
+full=np.full((5,4),7)
+print('Matriz de 7')
+print(full)
+#MATRIZ DE NÚMEROS EN RANGOS INGUALES
+espacio1=np.arange(1,100,10)
+print('Matriz de espacio 10')
+print(espacio1)
+espacio2=np.linspace(0,20,5)
+print('Matriz que contiene 4 datos')
+print(espacio2)
+#MATRIZ IDENTIDAD
+identidad1=np.eye(5,5)
+print('Matriz identidad')
+print(identidad1)
+identidad2=np.identity(5)
+print('Matriz identidad cuadrada')
+print(identidad2)
+#DIMENSIÓN DE UNA MATRIZ
+dimension=np.array([(2,3),(5,-9)])
+print('Dimensión de la matriz es:')
+print(dimension.ndim)
+#TIPOS DE DATOS ALMACENADOS EN LA MATRIZ
+tipo_dato=np.array([(5,6,-8)])
+print('Tipo de dato de la matriz:')
+print(tipo_dato.dtype)
+#TAMAÑO Y FORMA DE LA MATRIZ
+tam_for=np.array([(4,5,8,4,5),(3,8,3,9,-8)])
+print('Tamaño y forma de la matriz')
+print(tam_for.size)
+print(tam_for.shape)
+#CAMBIO DE FORMA DE UNA MATRIZ
+cam_for=np.array([(5,0,8),(3,-4,8)])
+print('Matriz sin cambios:')
+print(cam_for)
+cam_for=cam_for.reshape(3,2)
+print('Matriz cambiada de forma:')
+print(cam_for)
+#SELECCIONAR UN DATO DE LA MATRIZ
+seleccion=np.array([(2,4,7),(4,-9,3)])
+print('El dato que se quiere seleccionar es el -9')
+print(seleccion[1,1])
+#SELECCIONAR LOS NÚMERO DE UNA COLUMNA
+columna=np.array([(4,3,7,2,2),(3,-9,-3,2,3)])
+print('La columna es la 3')
+print(columna[0:,3])
+#OPERACIONES BÁSICAS CON MATRICES
+operaciones=np.array([1,7,5,6,1,-9])
+print(operaciones.min())
+print(operaciones.max())
+print(operaciones.sum())
+#RAÍZ CUADRA Y DESVIACIÓN ESTANDAR DE MATRICES
+ra_des=np.array([(4,5,9),(3,9,1)])
+print('Raiz cuadrada de la matríz:')
+print(np.sqrt(ra_des))
+print('Desviación estandard de la matríz')
+print(np.std(ra_des))
+#SUMA, RESTA, MULTIPLICACIÓN Y DIVISIÓN
+x=np.array([(4,7,8),(7,-7,5)])
+x1=np.array([(7,4,2),(4,-2,8)])
+print('suma')
+print(x+x1)
+print('resta')
+print(x-x1)
+print('multiplicar')
+print(x*x1)
+print('División')
+print(x/x1)
